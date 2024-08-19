@@ -1,0 +1,11 @@
+---
+import RootLayout from "../layouts/root-layout.astro";
+import HelloWorldSvelte from "../components/svelte/hello-world.svelte";
+import HelloWorldVue from "../components/vue/hello-world.vue";
+---
+
+<RootLayout title="Home">
+	<main>
+		<HelloWorldSvelte client:load />
+	</main>
+</RootLayout>
